@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Music Player</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        
+        <main class="main_container">
+
+            <section class="music_tool_container">
+
+                <div id="track_detail_box">
+                    <img src="./assets/images/default.png" alt="track image" srcset="">
+                    <h3 id="track_name">
+                        Song Name
+                    </h3>
+                    <small id="track_author">Track Author</small> 
+                </div>
+
+                <div id="track_progress_box">
+                    <input type="range" name="" id="track_progress" min="0" max="100" value="0">
+                    <div id="track_timeline">
+                        <small id="track_current_time">00:00</small>
+                        <small id="track_duration_time">00:00</small>
+                    </div>
+                </div>
+
+                <div id="audio_controller">
+                    <img src="./assets/icons/shuffle.ico" alt="shuffle" id="shuffle" srcset="" >
+                    <img src="./assets/icons/previous.ico" alt="previous" srcset="" id="previous">
+                    <div id="play_pause_box" onclick="playpauseTrack()">
+                        <img src="./assets/icons/pause.ico" alt="pause" id="pause_btn" srcset="" >
+                    </div>
+                    <img src="./assets/icons/next.ico" alt="next" srcset="" id="next">
+                    <img src="./assets/icons/list.ico" id="play-list" alt="repeat" srcset="" >
+                </div>
+
+            </section>
+
+            <section class="add" id="song_container">
+               
+            </section>
+
+        </main>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
